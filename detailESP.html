@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arduino Uno R3 — Detail Produk | Ochobot Store</title>
+  <title>ESP32 DevKit V1 — Detail Produk | Ochobot Store</title>
   <link rel="stylesheet" href="style.css" />
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" /> -->
@@ -16,7 +16,7 @@
     </a>
     <nav class="nav-links">
       <a href="index.html" class="nav-link">Home</a>
-      <a href="produk.html" class="nav-link">Produk</a>
+      <a href="produk.html" class="nav-link active">Produk</a>
       <!-- <a href="detail.html" class="nav-link active">Detail Produk</a> -->
       <a href="tentang.html" class="nav-link">Tentang Kami</a>
       <a href="kontak.html" class="nav-link">Kontak</a>
@@ -35,7 +35,7 @@
       <span>›</span>
       <a href="produk.html">Produk</a>
       <span>›</span>
-      <span>Arduino Uno R3</span>
+      <span>ESP32 DevKit V1</span>
     </div>
 
     <!-- PRODUCT DETAIL -->
@@ -45,25 +45,25 @@
         <!-- LEFT: IMAGES -->
         <div class="detail-images">
           <div class="detail-main-img">
-            <img id="mainImg" src="/ProjectUTS/Images/uno1.webp" alt="Arduino Uno R3" />
+            <img id="mainImg" src="/ProjectUTS/Images/esp.jpg" alt="ESP32 DevKit V1" />
             <span class="badge badge-hot" style="position:absolute;top:1rem;left:1rem;">TERLARIS</span>
           </div>
           <div class="detail-thumbs">
-            <img class="thumb active" src="/ProjectUTS/Images/uno1.webp" alt="View 1" onclick="changeImg(this)" />
-            <img class="thumb" src="/ProjectUTS/Images/uno2.jpeg" alt="View 2" onclick="changeImg(this)" />
-            <img class="thumb" src="/ProjectUTS/Images/uno3.jpg" alt="View 3" onclick="changeImg(this)" />
+            <img class="thumb active" src="/ProjectUTS/Images/esp.jpg" alt="View 1" onclick="changeImg(this)" />
+            <img class="thumb" src="/ProjectUTS/Images/esp2.jfif" alt="View 2" onclick="changeImg(this)" />
+            <img class="thumb" src="/ProjectUTS/Images/esp3.webp" alt="View 3" onclick="changeImg(this)" />
           </div>
         </div>
 
         <!-- RIGHT: INFO -->
         <div class="detail-info">
           <div class="section-tag">// Mikrokontroler</div>
-          <h1 class="detail-title">Arduino Uno R3</h1>
+          <h1 class="detail-title">ESP32 DevKit V1</h1>
 
           <div class="detail-rating">
             <span class="stars">★★★★★</span>
-            <span class="rating-count">(128 ulasan)</span>
-            <span class="stock-badge">✓ Stok Tersedia (47 unit)</span>
+            <span class="rating-count">(56 ulasan)</span>
+            <span class="stock-badge">✓ Stok Tersedia (100 unit)</span>
           </div>
 
           <div class="detail-price-wrap">
@@ -72,7 +72,7 @@
           </div>
 
           <p class="detail-desc">
-            Arduino Uno R3 adalah papan mikrokontroler berbasis ATmega328P yang paling populer dan banyak digunakan di seluruh dunia. Dilengkapi dengan 14 pin digital I/O, 6 analog input, dan konektivitas USB yang mudah digunakan. Cocok untuk pemula yang ingin belajar pemrograman mikrokontroler maupun profesional yang membutuhkan platform prototyping cepat.
+            ESP32 DevKit V1 adalah papan mikrokontroler berbasis chip ESP32 yang мощer dan serbaguna untuk berbagai kebutuhan pengembangan sistem embedded dan IoT. Dilengkapi dengan prosesor dual-core hingga 240 MHz, konektivitas WiFi dan Bluetooth bawaan, serta puluhan pin GPIO yang fleksibel. Board ini sangat cocok untuk pemula yang ingin belajar IoT maupun profesional yang membutuhkan performa tinggi untuk prototyping dan pengembangan sistem berbasis wireless.
           </p>
 
           <!-- QUANTITY & ADD TO CART -->
@@ -84,14 +84,14 @@
             </div>
 <button class="btn-primary btn-cart" onclick="addToCart(this)">🛒 Tambah ke Keranjang</button>
           </div>
-          <button class="btn-ghost btn-buy" onclick="buyNow(this)" data-product="Arduino Uno R3" data-price="85000">⚡ Beli Sekarang</button>
+          <button class="btn-ghost btn-buy" onclick="buyNow(this)" data-product="ESP32 DevKit V1" data-price="85000">⚡ Beli Sekarang</button>
 
           <!-- QUICK SPECS -->
           <div class="quick-specs">
-            <div class="qs-item"><span class="qs-key">Microcontroller</span><span class="qs-val">ATmega328P</span></div>
-            <div class="qs-item"><span class="qs-key">Clock Speed</span><span class="qs-val">16 MHz</span></div>
-            <div class="qs-item"><span class="qs-key">Digital I/O</span><span class="qs-val">14 pin</span></div>
-            <div class="qs-item"><span class="qs-key">Tegangan Operasi</span><span class="qs-val">5V</span></div>
+            <div class="qs-item"><span class="qs-key">Microcontroller</span><span class="qs-val">Xtensa Dual-Core 32-bit</span></div>
+            <div class="qs-item"><span class="qs-key">Clock Speed</span><span class="qs-val">240 MHz</span></div>
+            <div class="qs-item"><span class="qs-key">Digital I/O</span><span class="qs-val">30-34 pin</span></div>
+            <div class="qs-item"><span class="qs-key">Tegangan Operasi</span><span class="qs-val">3.3V</span></div>
           </div>
 
         </div>
@@ -102,38 +102,38 @@
         <div class="tab-header">
           <button class="tab-btn active" onclick="switchTab('deskripsi', this)">Deskripsi</button>
           <button class="tab-btn" onclick="switchTab('spesifikasi', this)">Spesifikasi Lengkap</button>
-          <button class="tab-btn" onclick="switchTab('ulasan', this)">Ulasan (128)</button>
+          <button class="tab-btn" onclick="switchTab('ulasan', this)">Ulasan (56)</button>
         </div>
 
         <!-- TAB: DESKRIPSI -->
         <div class="tab-panel active" id="tab-deskripsi">
-          <h3>Tentang Arduino Uno R3</h3>
+          <h3>Tentang ESP32 DevKit V1</h3>
           <p>
-            Arduino Uno adalah salah satu board mikrokontroler yang paling banyak digunakan di dunia. Board ini menggunakan chip ATmega328P sebagai otak utamanya yang bekerja pada kecepatan clock 16 MHz. 
+            ESP32 DevKit V1 adalah salah satu board mikrokontroler yang sangat populer untuk pengembangan sistem IoT modern. Board ini menggunakan chip ESP32 sebagai otak utamanya yang memiliki prosesor dual-core hingga 240 MHz serta sudah dilengkapi dengan fitur WiFi dan Bluetooth bawaan. 
           </p>
           <p>
-            Dengan ekosistem library yang sangat besar dan komunitas yang aktif, Arduino Uno menjadi pilihan utama bagi pelajar, mahasiswa, hobbyist, dan profesional di bidang elektronika dan IoT.
+            Dengan performa yang tinggi, konsumsi daya yang efisien, serta dukungan library yang luas melalui Arduino IDE maupun ESP-IDF, ESP32 DevKit V1 menjadi pilihan utama bagi pelajar, mahasiswa, developer, hingga profesional di bidang IoT dan embedded system.
           </p>
           <h4>Kegunaan Utama:</h4>
           <ul class="detail-list">
-            <li>Pemrograman mikrokontroler dasar</li>
-            <li>Prototyping sistem embedded</li>
-            <li>Kontrol motor dan servo</li>
+            <li>Pemrograman mikrokontroler tingkat lanjut</li>
+            <li>Pengembangan Internet of Things (IoT) berbasis WiFi & Bluetooth</li>
+            <li>Monitoring dan kontrol jarak jauh (remote system)</li>
             <li>Pembacaan sensor dan data logging</li>
-            <li>Sistem otomasi rumah (Home Automation)</li>
-            <li>Robot line follower dan mobile robot</li>
+            <li>Sistem smart home dan otomasi industri</li>
+            <li>Robotika dan sistem kendali berbasis wireless</li>
           </ul>
           <h4>Yang Termasuk dalam Paket:</h4>
           <ul class="detail-list">
-            <li>1x Arduino Uno R3 Board</li>
-            <li>1x Kabel USB Type-A to Type-B</li>
+            <li>1x ESP32 DevKit V1 Board</li>
+            <li>1x Kabel USB Type-A to Micro USB</li>
             <li>1x Lembar Quick Start Guide</li>
           </ul>
         </div>
 
         <!-- TAB: SPESIFIKASI -->
         <div class="tab-panel" id="tab-spesifikasi">
-          <h3>Spesifikasi Teknis Arduino Uno R3</h3>
+          <h3>Spesifikasi Teknis ESP32 DevKit V1</h3>
           <div class="table-wrap">
             <table class="spec-table">
               <thead>
@@ -143,22 +143,24 @@
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Mikrokontroler</td><td>ATmega328P</td></tr>
-                <tr><td>Tegangan Operasi</td><td>5V</td></tr>
-                <tr><td>Tegangan Input (Rekomendasi)</td><td>7–12V</td></tr>
-                <tr><td>Tegangan Input (Batas)</td><td>6–20V</td></tr>
-                <tr><td>Pin Digital I/O</td><td>14 pin (6 mendukung PWM)</td></tr>
-                <tr><td>Pin Analog Input</td><td>6 pin (resolusi 10-bit)</td></tr>
-                <tr><td>Arus DC per Pin I/O</td><td>40 mA</td></tr>
-                <tr><td>Flash Memory</td><td>32 KB (0.5 KB untuk bootloader)</td></tr>
-                <tr><td>SRAM</td><td>2 KB</td></tr>
-                <tr><td>EEPROM</td><td>1 KB</td></tr>
-                <tr><td>Clock Speed</td><td>16 MHz</td></tr>
-                <tr><td>Panjang</td><td>68.6 mm</td></tr>
-                <tr><td>Lebar</td><td>53.4 mm</td></tr>
-                <tr><td>Berat</td><td>25 g</td></tr>
-                <tr><td>Antarmuka USB</td><td>USB Type-B (via ATmega16U2)</td></tr>
-                <tr><td>Koneksi Power</td><td>USB / DC Jack / Pin Vin</td></tr>
+                <tr><td>Mikrokontroler</td><td>ESP32 (Xtensa Dual-Core 32-bit)</td></tr>
+                <tr><td>Tegangan Operasi</td><td>3.3V</td></tr>
+                <tr><td>Tegangan Input (Rekomendasi)</td><td>5V (via USB) & 7–12V (via Vin)</td></tr>
+                <tr><td>Tegangan Input (Batas)</td><td>5–12V</td></tr>
+                <tr><td>Pin Digital I/O</td><td>30–34 pin (tergantung versi board)</td></tr>
+                <tr><td>Pin Analog Input</td><td>Hingga 18 channel ADC (resolusi 12-bit)</td></tr>
+                <tr><td>Arus DC per Pin I/O</td><td>12 mA</td></tr>
+                <tr><td>Flash Memory</td><td>4 MB</td></tr>
+                <tr><td>SRAM</td><td>520 KB</td></tr>
+                <tr><td>EEPROM</td><td>Emulasi di Flash</td></tr>
+                <tr><td>Clock Speed</td><td>240 MHz</td></tr>
+                <tr><td>WiFi</td><td>802.11 b/g/n (2.4 GHz)</td></tr>
+                <tr><td>Bluetooth</td><td>Bluetooth v4.2 (Classic & BLE)</td></tr>
+                <tr><td>Panjang</td><td>51 mm</td></tr>
+                <tr><td>Lebar</td><td>25 mm</td></tr>
+                <tr><td>Berat</td><td>10 g</td></tr>
+                <tr><td>Antarmuka USB</td><td>Micro USB (via CP2102 / CH340)</td></tr>
+                <tr><td>Koneksi Power</td><td>USB / Pin Vin / 3.3V Pin</td></tr>
               </tbody>
             </table>
           </div>
@@ -170,7 +172,7 @@
           <div class="rating-summary">
             <div class="rating-big">4.9</div>
             <div class="rating-stars-big">★★★★★</div>
-            <div class="rating-count-big">128 ulasan</div>
+            <div class="rating-count-big">56 ulasan</div>
           </div>
           <div class="reviews-list">
             <div class="review-card">
@@ -212,12 +214,16 @@
       <div class="featured-grid">
         <article class="feat-card">
           <div class="feat-img-wrap">
-            <img src="/ProjectUTS/Images/esp.jpg" alt="ESP32" />
+            <img src="/ProjectUTS/Images/raspi.jpg" alt="Raspberry Pi" />
+            <span class="badge badge-sale">PROMO</span>
           </div>
           <div class="feat-info">
-            <h3>ESP32 DevKit V1</h3>
-            <p>Mikrokontroler dual-core dengan WiFi & Bluetooth.</p>
-            <div class="feat-footer"><span class="price">Rp 65.000</span><a href="detailESP.html" class="btn-sm">Detail</a></div>
+            <h3>Raspberry Pi 4 Model B</h3>
+            <p>Single-board computer powerful untuk sistem IoT kompleks.</p>
+            <div class="feat-footer">
+              <span class="price">Rp 750.000</span>
+              <a href="detailRaspi.html" class="btn-sm">Detail</a>
+            </div>
           </div>
         </article>
         <article class="feat-card">
@@ -286,7 +292,7 @@
   <script>
     // Set product data for JS functions
     window.productData = {
-      name: 'Arduino Uno R3',
+      name: 'ESP32 DevKit V1',
       price: 85000
     };
   </script>
